@@ -14,6 +14,9 @@ func main() {
 	os.Setenv("AWS_ACCESS_KEY_ID", os.Getenv("AWS_ACCESS_KEY_ID"))
 	os.Setenv("AWS_SECRET_ACCESS_KEY", os.Getenv("AWS_SECRET_ACCESS_KEY"))
 
+	password := "(*ndias891kjnasdjni*8812"
+	os.Setenv("PASSWORD", password)
+
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		filePath := r.URL.Path[1:]
 
